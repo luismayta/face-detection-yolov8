@@ -1,1 +1,1 @@
-# Welcome to base-template documentation
+# Welcome to face-detection-yolov8 documentation

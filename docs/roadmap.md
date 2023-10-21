@@ -29,7 +29,7 @@
 
 The Roadmap is a list of all the things we're working on for the year.
 
-You can see the corresponding projects on [base-template](https://github.com/hadenlabs/base-template)
+You can see the corresponding projects on [face-detection-yolov8](https://github.com/luismayta/face-detection-yolov8)
 
 ## Legend
 

@@ -11,7 +11,7 @@
 
 ## Bump a new version
 
-Make a new version of base-template in the following steps:
+Make a new version of face-detection-yolov8 in the following steps:
 
 ### Generate version major
 
