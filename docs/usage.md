@@ -1,7 +1,7 @@
 # How to use this project
 
-## Replace name project to New Project
+## Install
 
 ```bash
-agr 'base-template' 'new-project'
+task setup
 ```
