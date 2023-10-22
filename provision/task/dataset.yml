@@ -1,0 +1,35 @@
+---
+version: "3"
+
+tasks:
+  check:
+    desc: Exist dataset and dependences
+    run: once
+    deps:
+      - task: check:curl
+      - task: check:unzip
+
+  check:curl:
+    desc: Exist curl
+    run: once
+    preconditions:
+      - sh: command -v curl
+        msg: "Please Install curl"
+
+  check:unzip:
+    desc: Exist unzip
+    run: once
+    preconditions:
+      - sh: command -v unzip
+        msg: "Please Install unzip"
+
+  setup:
+    desc: Setup dataset dependences.
+    run: once
+    cmds:
+      - mkdir -p build
+      - curl -L "{{.DATASET_URL}}?key={{.ROBOFLOW_TOKEN}}" > build/{{.DATASET_NAME}}.zip
+      - unzip build/{{.DATASET_NAME}}.zip -d datasets
+    deps:
+      - task: check:curl
+      - task: check:unzip
