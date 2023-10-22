@@ -60,6 +60,7 @@ vars:
     *.zip
     .external_modules
     vendor
+    .DS_Store
 
 tasks:
   default:
